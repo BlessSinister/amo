@@ -35,7 +35,7 @@ body {
   left: 50rem;
   top: -14.5rem;
 }
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   .purple_decor_block {
     left: 17rem;
   }
@@ -69,7 +69,7 @@ body {
     left: 35rem;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   .balls_block {
     left: 10rem;
   }
