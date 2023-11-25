@@ -1,0 +1,131 @@
+.container {
+  display: grid;
+  grid-column: 1/-1;
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 5.5rem 1fr;
+  gap: 0 1.5rem;
+}
+@media (max-width: 425px) {
+  .container {
+    grid-template-rows: 1rem 1fr;
+  }
+}
+.company {
+  grid-column: 1/4;
+  grid-row: 2/2;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .company {
+    margin-left: 2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .company {
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 425px) {
+  .company {
+    grid-column: 1/-1;
+    grid-row: 2/2;
+    margin-left: 1.6rem;
+  }
+}
+.title {
+  color: var(--dark-gray, #656566);
+
+  /* маленькие заголовки */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.desription {
+  color: var(--light-text, #e4e5ea);
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .desription {
+    font-size: 1.3rem;
+  }
+}
+
+.block2_wrapper {
+  grid-column: 4/9;
+  grid-row: 2/2;
+  display: flex;
+  gap: 5.2rem;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+.menu > p {
+  margin-bottom: 1rem;
+}
+.menu > .title {
+  margin-bottom: 2rem;
+}
+@media (max-width: 425px) {
+  .block2_wrapper {
+    grid-column: 1/-1;
+    grid-row: 3/3;
+    margin-left: 1.6rem;
+  }
+}
+.contacts {
+  grid-column: 9/-1;
+  grid-row: 2/2;
+  text-align: right;
+}
+
+.contacts > svg {
+  margin-left: 1rem;
+}
+.copyrights {
+  color: var(--light-text, #e4e5ea);
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.margin_copy {
+  margin-top: 7rem;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contacts {
+    margin-right: 2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .contacts {
+    margin-right: 0.5rem;
+  }
+}
+@media (max-width: 425px) {
+  .contacts {
+    grid-column: 1/-1;
+    grid-row: 4/4;
+    text-align: left;
+    margin-top: 3rem;
+    margin-left: 1.6rem;
+  }
+  .margin_copy {
+    margin-top: 5rem;
+  }
+  .copyrights {
+    text-align: left;
+  }
+}
